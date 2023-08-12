@@ -4,6 +4,7 @@
 
 body {
   margin: 0px;
+  padding-top: 4rem;
   color: #333;
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: "Spectral", Georgia;
@@ -16,6 +17,10 @@ h3,
 h4,
 p {
   margin: 0px;
+}
+
+a {
+  text-decoration: none;
 }
 
 ul,
