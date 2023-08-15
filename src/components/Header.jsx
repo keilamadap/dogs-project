@@ -3,9 +3,10 @@ import { useContext } from "react";
 import styles from "./Header.module.css";
 import { ReactComponent as Dogs } from "../Assets/dogs.svg";
 import { UserContext } from "../context/UserContext";
+import Button from "./Forms/Button";
 
 const Header = () => {
-  const { data } = useContext(UserContext);
+  const { data, userLogout, login } = useContext(UserContext);
   console.log(data);
 
   return (
@@ -23,6 +24,7 @@ const Header = () => {
             Login/Criar
           </Link>
         )}
+        {login && <Button onClick={userLogout}>sair</Button>}
       </nav>
     </header>
   );
