@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap");
+
+.section {
+  padding: 15px;
+}
+.square {
+  background-color: #ffbb11;
+  height: 35px;
+  width: 30px;
+  border-radius: 6px;
+  z-index: -1;
+  margin-top: 20px;
+  position: relative;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.title {
+  font-family: Quicksand;
+  font-size: 40px;
+  position: absolute;
+  color: #333;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.links {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lostPassword {
+  color: #333;
+  margin-bottom: 3rem;
+  outline: none;
+  text-decoration: underline;
+}
+
+.cadastrar {
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-bottom: 1rem;
+}

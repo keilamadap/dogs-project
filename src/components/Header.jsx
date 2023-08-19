@@ -7,7 +7,6 @@ import Button from "./Forms/Button";
 
 const Header = () => {
   const { data, userLogout, login } = useContext(UserContext);
-  console.log(data);
 
   return (
     <header className={styles.header}>
