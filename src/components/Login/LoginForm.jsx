@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Input from "../Forms/Input";
 import Button from "../Forms/Button";
@@ -19,6 +19,15 @@ const LoginForm = () => {
       userLogin(username.value, password.value);
     }
   }
+
+  useEffect(() => {
+    const fullname = "15165165165165165.556165165165165";
+    let firstname = fullname.slice(0, fullname.indexOf("."));
+    let lastname = fullname.slice(fullname.indexOf("."));
+    console.log("first", Number(firstname));
+
+    console.log("last", lastname);
+  }, []);
 
   return (
     <section className={styles.section}>

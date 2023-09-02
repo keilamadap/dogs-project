@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&display=swap");
 
-.section {
-  padding: 15px;
-}
 .square {
   background-color: #ffbb11;
   height: 35px;
@@ -20,7 +17,7 @@
 .title {
   font-family: Quicksand;
   font-size: 40px;
-  position: absolute;
+  /* position: absolute; */
   color: #333;
 }
 
@@ -48,4 +45,30 @@
 
 .text {
   margin-bottom: 1rem;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.login::before {
+  display: block;
+  content: "";
+  background: url("../../Assets/login.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 40rem) {
+  .login {
+    grid-template-columns: 1fr;
+  }
+  .login::before {
+    display: none;
+  }
+  .forms {
+    max-width: 100%;
+  }
 }
