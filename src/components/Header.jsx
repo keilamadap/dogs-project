@@ -23,7 +23,6 @@ const Header = () => {
             Login/Criar
           </Link>
         )}
-        {login && <Button onClick={userLogout}>sair</Button>}
       </nav>
     </header>
   );
