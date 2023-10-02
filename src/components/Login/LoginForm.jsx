@@ -11,6 +11,9 @@ const LoginForm = () => {
   const password = useForm();
   const navigate = useNavigate();
   const { userLogin, error, loading } = useContext(UserContext);
+  const { login } = useContext(UserContext);
+
+  if (login === true) return <Navigate to="/conta" />;
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -19,15 +22,6 @@ const LoginForm = () => {
       userLogin(username.value, password.value);
     }
   }
-
-  useEffect(() => {
-    const fullname = "15165165165165165.556165165165165";
-    let firstname = fullname.slice(0, fullname.indexOf("."));
-    let lastname = fullname.slice(fullname.indexOf("."));
-    console.log("first", Number(firstname));
-
-    console.log("last", lastname);
-  }, []);
 
   return (
     <section className={styles.section}>
