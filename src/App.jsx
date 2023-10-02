@@ -12,7 +12,7 @@ import ProtectedRoute from "./Helper/ProtectedRoute";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/dogs-project">
         <UserStorage>
           <Header />
           <Routes>
