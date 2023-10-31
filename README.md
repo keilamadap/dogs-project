@@ -1,4 +1,4 @@
-### Dog's Social Media
+# Dog's Social Media
 
 ## Descrição do Projeto <span id="descricao" />
 
